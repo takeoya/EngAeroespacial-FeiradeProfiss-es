@@ -5,3 +5,22 @@
 .wrapper{
     padding: 0;
 }
+#navbarr{
+    background-color: #152341;
+}
+#navbarr a{
+    color: white;
+}
+.carousel-item{
+    height: 65vh;
+}
+.overlay-img{
+    position: absolute;
+    background-image: url('../imgs/space2.jpg');
+    background-position: center;
+    background-size: cover;
+    bottom: 0;
+    top:0;
+    left: 0;
+    right: 0;
+}
