@@ -11,6 +11,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   <title>Document</title>
 </head>
+
 <body>
   <header>
     <nav class="navbar navbar-expand-lg fixed-top" id="navbarr">
@@ -43,8 +44,8 @@
       </div>
     </nav>
   </header>
+  
   <main>
-
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
@@ -57,7 +58,7 @@
           <div class="overlay-img"></div>
           <div class="container">
             <div class="carousel-caption text-start">
-              <h1>Feira de Profissoões - Engenharia Aeroespacial</h1>
+              <h1>Feira de Profissões - Engenharia Aeroespacial</h1>
               <p>Some representative placeholder content for the first slide of the carousel.</p>
               <p><a class="btn btn-lg btn-primary" href="#">Saiba mais</a></p>
             </div>
@@ -95,34 +96,131 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    
-    <div class="cont about">
-      <div class="row">
-        <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+
+    <div class="container marketing">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Engenheiro aeroespacial: tudo sobre a profissão</h2>
+          <p class="lead">Responsável por construções, inspeções e projetos de satélites, foguetes, aviões, helicópteros e veículos espaciais em geral.. As atuações desempenhadas no ramo aeroespacial podem ser estratégicas para um país.</p>
+        </div>
+        <div class="col-md-5">
+          <figure class="figure">
+            <img src="imgs/gemini.png" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+            <figcaption class="figure-caption text-right">O Projeto Gemini foi o segundo projeto de exploração espacial realizado pela NASA, antecedido pelo Projeto Mercury, e ao qual se seguiu o Programa Apollo.</figcaption>
+          </figure>
+        </div>
+        <div id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="card">
+              <h5 class="card-header" role="tab" id="headingOne">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="d-block">
+                      <i class="fa fa-chevron-down pull-right"></i> O que faz um engenheiro aerospacial?
+                  </a>
+              </h5>
+      
+              <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="card-body">
+                    O Engenheiro aeroespacial está habilitado para o desenvolvimento e a realização de inspeções em planadores, veículos espaciais, satélites e lançadores de satélites, foguetes, helicópteros e aviões. De acordo com a Agência Espacial Brasileira, o profissional terá habilidades para projetar, controlar e testar sistemas do setor aeroespacial, além de atuar com planejamento e testagem dos sistemas, sejam eles de propulsão, mecânico ou energia.<br><br>
+                    A área de Engenharia Aeroespacial lida, entre outras coisas, com o processo de projetar, criar, construir e fabricar qualquer artefato que voe. Jatos, helicópteros e espaçonaves, por exemplo, fazem parte deste campo, que tem dois principais ramos: Engenharia Aeronáutica e Engenharia Astronáutica. O primeiro lida com qualquer aeronave que voe na atmosfera terrestre. O último lida com qualquer artefato que voe fora da atmosfera.
+                  </div>
+              </div>
+          </div>
+          <div class="card">
+              <h5 class="card-header" role="tab" id="headingTwo">
+                  <a class="collapsed d-block" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <i class="fa fa-chevron-down pull-right"></i> Sobre o curso
+                  </a>
+              </h5>
+              <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                  <div class="card-body">
+                    O curso de bacharelado em Engenharia Aeroespacial tem duração média de cinco anos, sendo que a maior parte das disciplinas é voltada para o campo espacial. Ao longo dos dois primeiros anos do curso, o estudante tem acesso a disciplinas das ciências básicas para a formação em engenharia, como física, química, matemática e computação. Durante os três últimos anos do curso, o aluno estuda matérias específicas da área. Propulsão, Mecânica Estrutural, Materiais, Controle, Mecânica de Voo e Orbital, Telecomunicações, Térmica, Aerodinâmica e Eletrônica fazem parte da grade curricular.
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
   
-          <h2>Heading</h2>
-          <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-          <p><a class="btn btn-secondary" href="#">View details »</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+      <hr class="featurette-divider">
+    </div>
+
+    <div class="bg-#0551D8 pb-5" id="mainP">
+      <div class="container">
+        <center>
+          <div class="row m-0 p-0" id="grade">
+          <h3 class="text-white display-6 mt-5">Grade do curso de Engenharia Aerospacial</h3>
   
-          <h2>Heading</h2>
-          <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-          <p><a class="btn btn-secondary" href="#">View details »</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-  
-          <h2>Heading</h2>
-          <p>And lastly this, the third column of representative placeholder content.</p>
-          <p><a class="btn btn-secondary" href="#">View details »</a></p>
-        </div><!-- /.col-lg-4 -->
+          <div class="col-20 col-sm-20 col-md-10 col-lg-10"> 
+            <hr>
+            <p id="perfil">
+              <center><div class="card-group">
+                <div class="card">
+                  <img src="imgs/calc.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      ⚬ Aerotermodinâmica e Hipersônica<br>
+                        ⚬ Álgebra Linear e Geometria Analítica<br>
+                        ⚬ Algoritmos e Programação<br>
+                        ⚬ Ambiente Espacial<br>
+                        ⚬ Cálculo<br>
+                        ⚬ Ciência dos Materiais<br>
+                        ⚬ Circuitos Elétricos
+                    </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="imgs/draw.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text"> 
+                      ⚬ Desenho Técnico<br>
+                      ⚬ Engenharia de Segurança<br>
+                      ⚬ Engenharia de Veículos Aeroespaciais<br>
+                      ⚬ Equações Diferenciais<br>
+                      ⚬ Escoamentos Compressíveis<br>
+                      ⚬ Estatística<br>
+                      ⚬ Estruturas Aeroespaciais   </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="imgs/phy.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      ⚬ Física<br>
+                      ⚬ Mecânica<br>
+                      ⚬ Mecânica de Fluidos<br>
+                      ⚬ Mecânica de Sólidos<br>
+                      ⚬ Mecânica do Voo<br>
+                      ⚬ Motores de Combustão Interna<br>
+                      ⚬ Química</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="imgs/launch.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      ⚬ Sistemas de Propulsão<br>
+                      ⚬ Sistemas Hidráulicos e Pneumáticos<br>
+                      ⚬ Sistemas Mecânicos<br>
+                      ⚬ Tecnologia da Fabricação<br>
+                      ⚬ Teoria Cinética dos Gases<br>
+                      ⚬ Termodinâmica<br>
+                      ⚬ Transmissão de Calor<br>
+                      ⚬ Vibrações Mecânicas</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div></center>
       </div>
     </div>
 
+    <div class="container marketing">
+      <hr class="featurette-divider">
+    </div>
+
   </main>
-    
 </body>
 </html>
