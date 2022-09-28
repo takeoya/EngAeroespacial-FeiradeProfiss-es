@@ -1,0 +1,85 @@
+.flow > *:where(:not(:first-child)) {
+  margin-top: var(--flow-spacer, 1rem);
+}
+
+.flow[data-spacing="small"] {
+  --flow-spacer: .25rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.content {
+  padding: 2em;
+  width: 100%;
+  max-width: 70rem;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+
+  
+}
+@media (min-width: 60em) {
+  .content{
+    flex-direction: row;
+    }
+  }
+
+.card {
+  contain: layout inline-size;
+  box-shadow: 0 0.25em 0.75em hsl(0 0% 0% / 0.15);
+  
+}
+  .card img{
+    object-fit: cover;
+  }
+
+  .content {
+    padding: 0.75rem;
+  }
+
+
+@container (min-width: 25rem) {
+  .card img {
+    max-width: 150px;
+  }
+}
+
+aside {
+  flex-basis: 50%;
+  gap: 2em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  /*margin: 0;*/
+  color: #234;
+}
+
+h1 {
+  font-size: clamp(3rem, 10vw + 1rem, 6rem);
+}
+
+p {
+  color: hsl(0 0% 0% / 0.85);
+  line-height: 1.6;
+}
+
+h1 {
+  line-height: 0.9;
+}
