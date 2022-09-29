@@ -1,3 +1,58 @@
+header{
+  display: block;
+}
+@font-face {
+  font-family: Avenir Font;
+  src: url('../fonts/AvenirLTStd-Black.otf')format('opentype');
+}
+.navbar{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #152341;
+}
+.fixed-top{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+#navbarr a{
+  color: white;
+}
+
+/*carrosel*/
+@media (min-width: 40em) {
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+}
+.carousel-item{
+  height: 70vh;
+}
+.carousel {
+  font-family: Avenir Font;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+.overlay-img{
+  position: absolute;
+  background-image: url('../imgs/space2.jpg');
+  background-position: center;
+  background-size: cover;
+  bottom: 0;
+  top:0;
+  left: 0;
+  right: 0;
+}
+
 .flow > *:where(:not(:first-child)) {
   margin-top: var(--flow-spacer, 1rem);
 }
@@ -11,14 +66,17 @@
   margin: 0;
   padding: 0;
 }
-
+main{
+  /*background-color: #000;*/
+}
 body {
   font-family: "Poppins", sans-serif;
 }
 
-img {
+.card img {
   display: block;
   max-width: 100%;
+  object-fit: cover;
 }
 
 .content {
@@ -41,15 +99,14 @@ img {
 .card {
   contain: layout inline-size;
   box-shadow: 0 0.25em 0.75em hsl(0 0% 0% / 0.15);
-  
 }
-  .card img{
-    object-fit: cover;
-  }
+.card__content{
+  padding: 0.75rem;
+}
 
-  .content {
-    padding: 0.75rem;
-  }
+.content{
+  padding: 0.75rem;
+}
 
 
 @container (min-width: 25rem) {
@@ -63,23 +120,24 @@ aside {
   gap: 2em;
 }
 
-h1,
-h2,
-h3,
-h4 {
+.flow h1, h2, h3, h4 {
   /*margin: 0;*/
   color: #234;
 }
 
-h1 {
+.flow h1 {
   font-size: clamp(3rem, 10vw + 1rem, 6rem);
+  font-weight: bold;
+}
+.flow h2{
+  font-weight: bold;
 }
 
-p {
+.flow p {
   color: hsl(0 0% 0% / 0.85);
   line-height: 1.6;
 }
 
-h1 {
+.flow h1 {
   line-height: 0.9;
 }
