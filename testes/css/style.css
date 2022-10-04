@@ -156,6 +156,34 @@ aside {
 *, *::before, *::after{
   box-sizing: border-box;
 }
+.universidades{
+  background: var(--clr-neutral-900);
+  margin-bottom: 3em;
+}
+#cont-uni{
+  padding-top: 2em;
+  background: var(--clr-neutral-900);
+}
+#cont-uni h1{
+  color: #fff;
+}
+@media (min-width: 576px){
+.container-uni >.uni:first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+ } 
+}
+@media (min-width: 576px){
+.container-uni>.uni {
+    -ms-flex: 1 0 0%;
+    flex: 1 0 0%;
+    margin-bottom: 0;
+}}
+@media (min-width: 576px){
+.container-uni {
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+}}
 .container-uni{
   align-self: center;
   justify-content: center;
@@ -179,6 +207,22 @@ aside {
   transition: transform 500ms ease;
   margin-inline: 10px;
 }
+#ufabc{
+  background: url('../../imgs/logo3.png') center center;
+  background-size: cover;
+}
+#ufsc{
+  background: url('../../imgs/ufsc.png') center center;
+  background-size: cover;
+}
+#ufmg{
+  background: url('../../imgs/ufmg.jpg') center center;
+  background-size: cover;
+}
+#ufsm{
+  background: url('../../imgs/ufsm.png') center center;
+  background-size: cover;
+}
 .uni:hover,
 .uni:focus-within{
   transform: scale(1.05);
@@ -188,7 +232,7 @@ aside {
   padding: var(--padding);
   background: linear-gradient(
       hsl(0 0% 0% / 0),
-      hsl(20 0% 0% / 0.3) 20%,
+      hsl(20 0% 0% / 0.5) 20%,
       hsl(0 0% 0% / 1)
   );
 }
