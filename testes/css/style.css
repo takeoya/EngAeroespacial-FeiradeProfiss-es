@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
 header{
   display: block;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 800;
 }
 @font-face {
   font-family: Avenir Font;
@@ -13,7 +16,7 @@ header{
   justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  background-color: #152341;
+  background-color: #0e131c;
 }
 .fixed-top{
   position: fixed;
@@ -22,8 +25,27 @@ header{
   left: 0;
   z-index: 1030;
 }
-#navbarr a{
-  color: white;
+#navbarr .nav-link{
+  color: #6ea0ff;
+}
+.collapse{
+ overflow: hidden;
+}
+.navbar-nav .nav-link::after {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+  position: absolute;
+  bottom: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+.navbar-nav .nav-link:hover{
+  color: #fff;
+}
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
 }
 
 /*carrosel*/
@@ -107,7 +129,6 @@ body {
 .content{
   padding: 0.75rem;
 }
-
 
 @container (min-width: 25rem) {
   .card img {
