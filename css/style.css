@@ -8,6 +8,24 @@ header{
   font-family: Avenir Font;
   src: url('../fonts/AvenirLTStd-Black.otf')format('opentype');
 }
+::-webkit-scrollbar{
+    width: 1em;
+    background: #02152b;
+}
+::-webkit-scrollbar-track{
+  background: hsl(200 50% 10% / 1);
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(8, 31, 72);
+    border: 0.2em solid rgb(191, 191, 191);
+    border-radius: 100vw;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: rgb(113, 116, 122);
+    border: 0.2em solid rgb(6, 32, 78);
+}
 .navbar{
   position: relative;
   display: flex;
@@ -54,11 +72,10 @@ header{
   }
 }
 .carousel-item{
-  height: 70vh;
+  height: 75vh;
 }
 .carousel {
   font-family: "Poppins", sans-serif;
-  margin-bottom: 4rem;
 }
 .carousel h1{
     font-weight: bold;
@@ -73,6 +90,22 @@ header{
   left: 0;
   right: 0;
 }
+.overlay-img2{
+  position: absolute;
+  background-image: url('../imgs/work2.jpg');
+  background-position: center;
+  /*background-size: cover;*/
+  opacity: 0.7;
+  bottom: 0;
+  top:0;
+  left: 0;
+  right: 0;
+}
+#c2 h1{
+  color:#f0f0f0;
+}
+
+/*sobre*/
 
 .flow > *:where(:not(:first-child)) {
   margin-top: var(--flow-spacer, 1rem);
@@ -99,7 +132,17 @@ body {
   max-width: 100%;
   object-fit: cover;
 }
-
+.sobre{
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  background-color: #0e131c;;
+}
+#sobre h1{
+  color: #0a43ae;
+}
+#sobre p{
+  color: #fff;
+}
 .content {
   padding: 2em;
   width: 100%;
@@ -121,6 +164,9 @@ body {
   contain: layout inline-size;
   box-shadow: 0 0.25em 0.75em hsl(0 0% 0% / 0.15);
 }
+#card-sobre p{
+  color: hsl(0 0% 0% / 0.85);
+}
 .card__content{
   padding: 0.75rem;
 }
@@ -129,11 +175,11 @@ body {
   padding: 0.75rem;
 }
 
-@container (min-width: 25rem) {
+/*@container (min-width: 25rem) {
   .card img {
     max-width: 150px;
   }
-}
+}*/
 
 aside {
   flex-basis: 50%;
@@ -162,6 +208,14 @@ aside {
   line-height: 0.9;
 }
 
+/*grades*/
+#grade{
+  background-color: #270942;
+}
+#grade h1{
+color: #b3b3b3;
+}
+
 /*universidades*/
 
 *{
@@ -177,7 +231,7 @@ aside {
   box-sizing: border-box;
 }
 .universidades{
-  background: var(--clr-neutral-900);
+  background: #0e131c;
   margin-bottom: 3em;
 }
 #cont-uni{
@@ -211,7 +265,7 @@ aside {
   min-height: 100vh;
   place-items: center;
   line-height: 1.6;
-  background: var(--clr-neutral-900);
+  background: #0e131c;
   font-family: sans-serif;
   padding: 2em;
   /*padding-right: 15em;*/
