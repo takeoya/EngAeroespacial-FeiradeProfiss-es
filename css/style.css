@@ -101,8 +101,25 @@ header{
   left: 0;
   right: 0;
 }
+.overlay-img3{
+  position: absolute;
+  background-image: url('../imgs/campus2.jpg');
+  background-position: center;
+  /*background-size: cover;*/
+  opacity: 0.5;
+  bottom: 0;
+  top:0;
+  left: 0;
+  right: 0;
+}
 #c2 h1{
   color:#f0f0f0;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+#c3 h1{
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgb(52, 52, 52);
 }
 
 /*sobre*/
@@ -210,7 +227,7 @@ aside {
 
 /*grades*/
 #grade{
-  background-color: #270942;
+  background-color: #100026;
 }
 #grade h1{
 color: #b3b3b3;
@@ -232,7 +249,7 @@ color: #b3b3b3;
 }
 .universidades{
   background: #0e131c;
-  margin-bottom: 3em;
+  padding-bottom: 3em;
 }
 #cont-uni{
   padding-top: 2em;
@@ -386,4 +403,16 @@ color: #b3b3b3;
   scroll-behavior: auto !important;
   transition-delay: 0ms !important;
 }
+}
+
+.areas{
+  padding-top: 1.5rem;
+  background-color: #b7cece;
+}
+.pos{
+  background-color: #e2e2e2;
+  padding-top: 1.5rem;
+}
+#video{
+  background-color: #0e131c;
 }
