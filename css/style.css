@@ -416,3 +416,10 @@ color: #b3b3b3;
 #video{
   background-color: #0e131c;
 }
+#links a{
+  align-items: center;
+  text-decoration: none;
+}
+ion-icon{
+  font-size: 2rem;
+}
